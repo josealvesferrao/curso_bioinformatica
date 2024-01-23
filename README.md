@@ -26,6 +26,9 @@ LATEST_DIR=$(ls -td * | head -1)
 
 ## Variant Calling
 
+teste
+
+`teste`
 
 ## Variant Filtering
 
