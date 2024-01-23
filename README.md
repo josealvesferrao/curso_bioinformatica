@@ -4,9 +4,9 @@
 
 ```mermaid
   graph LR;
-      a(Transfer Data From Sequencer) --> b(run annotation pipeline) ;
-      b --> c(Archive data);
-      b --> d(Copy Report to final User Interface);
+      a(teste1) --> b(teste2) ;
+      b --> c(teste3);
+      b --> d(teste4);
 ```
 
 ## Unix tutorial / Command Line
@@ -26,4 +26,7 @@ LATEST_DIR=$(ls -td * | head -1)
 
 ## Variant Calling
 
+
 ## Variant Filtering
+
+
