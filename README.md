@@ -14,6 +14,7 @@ Open a web browser and find this github repository https://github.com/krother/ba
 go to your home directory 
 ```
 cd ~
+```
 git clone https://github.com/krother/bash_tutorial.git
 ```
 
