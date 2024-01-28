@@ -1,13 +1,5 @@
 # curso_bioinformatica
 
-## 1. Introduction
-
-```mermaid
-  graph LR;
-      a(teste1) --> b(teste2) ;
-      b --> c(teste3);
-      b --> d(teste4);
-```
 
 ## Unix tutorial / Command Line 
 Open a web browser and find this github repository https://github.com/krother/bash_tutorial
