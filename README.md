@@ -19,6 +19,8 @@ cd ~
 git clone https://github.com/krother/bash_tutorial.git
 ```
 
+Additional tutorial: https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+
 * TODO: 
 
 - [ ] Find the most recent directory in bash
