@@ -15,6 +15,7 @@ go to your home directory
 ```
 cd ~
 ```
+```
 git clone https://github.com/krother/bash_tutorial.git
 ```
 
