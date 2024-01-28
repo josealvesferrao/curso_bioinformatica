@@ -11,6 +11,7 @@
 
 ## Unix tutorial / Command Line 
 Open a web browser and find this github repository https://github.com/krother/bash_tutorial
+
 go to your home directory 
 ```
 cd ~
