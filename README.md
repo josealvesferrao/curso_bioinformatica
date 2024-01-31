@@ -41,5 +41,5 @@ gatk VariantFiltration --variant /home/formador/resultados_selected/variant_call
 
 ## Variant selection
 ```
-
+gatk SelectVariants --variant /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --output /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed
 ```
