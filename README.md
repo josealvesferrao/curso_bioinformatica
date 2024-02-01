@@ -27,6 +27,25 @@ fastqc -t 1 -o /mnt/sdb/curso_bioinformatica/output/grupo1/fastqc /mnt/sdb/curso
 bwa mem -t 1 -R '@RG\tID:sample1\tPU:NB551361.1.sample1\tSM:sample1\tPL:ILLUMINA\tLB:sample1\tCN:curso' /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta /mnt/sdb/curso_bioinformatica/raw_data/sample1/selected_fastq/sample1_chr2-171000000-172000000_R1.fastq.gz /mnt/sdb/curso_bioinformatica/raw_data/sample1/selected_fastq/sample1_chr2-171000000-172000000_R2.fastq.gz > sample1_chr2-171000000-172000000.sam
 ```
 
+## MarkDuplicates
+
+```
+gatk MarkDuplicates -I=sample.bam -O=sample_marked.bam -M=sample_marked_metrics.txt
+
+```
+
+## BaseRecalibrator
+
+```
+gatk BaseRecalibrator -I sample_marked.bam -R genome.fasta --known-sites known_snps.vcf --known-sites known_indels.vcf [ --intervals target_positions.bed --interval-padding 100 ] -O sample_marked_baserecalibrator_report.txt
+```
+
+## ApplyBaseRecalibrator
+
+```
+gatk ApplyBQSR -I sample_marked.bam -R genome.fasta --bqsr-recal-file sample_marked_baserecalibrator_report.txt –O sample_marked_baserecalibrator.bam
+```
+
 ## Variant calling
 
 ```
