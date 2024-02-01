@@ -30,7 +30,7 @@ bwa mem -t 1 -R '@RG\tID:sample1\tPU:NB551361.1.sample1\tSM:sample1\tPL:ILLUMINA
 ## MarkDuplicates
 
 ```
-gatk MarkDuplicates -I=sample.bam -O=sample_marked.bam -M=sample_marked_metrics.txt
+gatk MarkDuplicates -I sample.bam -O sample_marked.bam -M sample_marked_metrics.txt
 ```
 
 ## BaseRecalibrator
@@ -42,13 +42,13 @@ gatk BaseRecalibrator -I sample_marked.bam -R genome.fasta --known-sites known_s
 ## ApplyBaseRecalibrator
 
 ```
-gatk ApplyBQSR -I sample_marked.bam -R genome.fasta --bqsr-recal-file sample_marked_baserecalibrator_report.txt –O sample_marked_baserecalibrator.bam
+gatk ApplyBQSR -I sample_marked.bam -R genome.fasta --bqsr-recal-file sample_marked_baserecalibrator_report.txt -O sample_marked_baserecalibrator.bam
 ```
 
 ## Qualimap
 
 ```
-qualimap bamqc –bam sample_marked_recalibrated.bam –outdir . –outfile sample_marked_recalibrated_qualimap.pdf –outformat PDF [ -gff targets_position.bed ]
+qualimap bamqc -bam sample_marked_recalibrated.bam -outdir . -outfile sample_marked_recalibrated_qualimap.pdf -outformat PDF [ -gff targets_position.bed ]
 ```
 
 ## Variant calling
