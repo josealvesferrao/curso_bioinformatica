@@ -45,6 +45,12 @@ gatk BaseRecalibrator -I sample_marked.bam -R genome.fasta --known-sites known_s
 gatk ApplyBQSR -I sample_marked.bam -R genome.fasta --bqsr-recal-file sample_marked_baserecalibrator_report.txt –O sample_marked_baserecalibrator.bam
 ```
 
+## Qualimap
+
+```
+qualimap bamqc –bam sample_marked_recalibrated.bam –outdir . –outfile sample_marked_recalibrated_qualimap.pdf –outformat PDF [ -gff targets_position.bed ]
+```
+
 ## Variant calling
 
 ```
