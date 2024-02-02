@@ -75,8 +75,8 @@ gatk SelectVariants --variant /home/formador/resultados_selected/variant_calling
 vep -i /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered_selected.vcf.gz --cache --dir_cache /mnt/sdb/curso_bioinformatica/vep --dir_plugins /mnt/sdb/curso_bioinformatica/vep/Plugins --species homo_sapiens --assembly GRCh38 --format vcf --vcf --output_file /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered_selected_annotated.vcf.gz --force_overwrite --stats_file /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered_selected_annotated.html --fork 2 --fasta /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.fa --merged --nearest symbol --allele_number --show_ref_allele --hgvsg --transcript_version --mane_select --check_existing --exclude_null_alleles --clin_sig_allele 1 --exclude_predicted --pick_allele_gene
 ```
 
-## Exomiser
+## Exomiser (conda activate base)
 
 ```
-java -Xmx4g -jar /mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/exomiser-cli-13.1.0.jar --assembly hg38 --analysis /home/formador/sample1_clinical_exome_analysis_file.yml --output-prefix /mnt/sdb/curso_bioinformatica/output/formador/exomiser_output/sample1_Exomiser --spring.config.location=/mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/application.properties
+java -Xmx4g -jar /mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/exomiser-cli-13.1.0.jar --assembly hg38 --analysis /mnt/sdb/curso_bioinformatica/raw_data/sample1/exomiser_files/sample1_full_clinical_exome_analysis_file.yml --output-prefix /mnt/sdb/curso_bioinformatica/output/formador/exomiser_output/sample1_Exomiser --spring.config.location=/mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/application.properties
 ```
