@@ -84,5 +84,5 @@ java -Xmx4g -jar /mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/exom
 ## [Optional] Virtual gene panel / Filter by HPO 150 most associated genes and AF cutoff. Last argument is AF (eg. 0.01 is 1%), try other AF values.
 
 ```
-python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_originalVEP-VCF_genome19_JAF_17-10-2022.py sample1 /mnt/sdb/curso_bioinformatica/raw_data/sample1/vep_files/sample1_vep_annotation_no_comments.tab /mnt/sdb/curso_bioinformatica/raw_data/sample1/phen2gene_list/sample1_phen2gene_list.txt /mnt/sdb/curso_bioinformatica/raw_data/scripts/gene_list_trusight_one.txt 0.001
+python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_originalVEP-VCF_genome19_JAF_17-10-2022.py sample1 /mnt/sdb/curso_bioinformatica/raw_data/sample1/vep_files/sample1_vep_annotation_no_comments.tab /mnt/sdb/curso_bioinformatica/raw_data/sample1/phen2gene_list/sample1_phen2gene_list.txt /mnt/sdb/curso_bioinformatica/raw_data/scripts/gene_list_trusight_one.txt 0.01
 ```
