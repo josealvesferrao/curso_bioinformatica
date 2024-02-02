@@ -95,8 +95,11 @@ python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_origin
 ```
 
 ## Useful links
-https://hpo.jax.org/app/                                       
-https://doc2hpo.wglab.org/ 
+https://hpo.jax.org/app/
+
+https://doc2hpo.wglab.org/
+
 https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root
+
 https://phen2gene.wglab.org/
 
