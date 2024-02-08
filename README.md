@@ -113,7 +113,7 @@ python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_origin
 ```
 
 ## Useful links
-https://hpo.jax.org/app/ # Human Phenotype Ontology
+https://hpo.jax.org/app/ - Human Phenotype Ontology
 
 https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root
 
