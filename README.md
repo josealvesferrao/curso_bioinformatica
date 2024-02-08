@@ -113,11 +113,14 @@ python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_origin
 ```
 
 ## Useful links
-https://hpo.jax.org/app/
-
-https://doc2hpo.wglab.org/
+https://hpo.jax.org/app/ # Human Phenotype Ontology
 
 https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root
 
+https://doc2hpo.wglab.org/
+
 https://phen2gene.wglab.org/
+
+https://www.internationalgenome.org/data-portal/sample  # Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files.
+
 
