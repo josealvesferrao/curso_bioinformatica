@@ -120,10 +120,22 @@ https://hpo.jax.org/app/ - Human Phenotype Ontology (HPO)
 
 https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root - BioPortal has many ontologies, including HPO
 
-https://doc2hpo.wglab.org/ - To automatically convert clinical description/phenotype to HPO terms.
+https://doc2hpo.wglab.org/ - To automatically convert clinical description/phenotype to HPO terms
 
-https://phen2gene.wglab.org/ - Get a list of genes associated with a set of HPO terms.
+https://phen2gene.wglab.org/ - Get a list of genes associated with a set of HPO terms
 
-https://www.internationalgenome.org/data-portal/sample - Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files.
+https://www.internationalgenome.org/data-portal/sample - Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files
 
+https://www.ensembl.org/index.html - You may look for information regarding a certain gene in Ensembl. Choose Human and search for a gene, press "Go"
 
+https://hsf.genomnis.com/login - You can use HSF for splicing analysis (predict the impact of variants)
+
+https://www.ncbi.nlm.nih.gov/snp/
+
+https://www.ncbi.nlm.nih.gov/clinvar/
+
+https://mastermind.genomenon.com/ - You may use Mastermind to search for a specific variant on the literature 
+
+https://www.uniprot.org/
+
+https://gtexportal.org/home/, https://www.bgee.org/ - You may check gene expression levels (in different species or tissues)
