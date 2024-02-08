@@ -113,14 +113,14 @@ python /mnt/sdb/curso_bioinformatica/raw_data/scripts/Script_HPOtoGENE_vs_origin
 ```
 
 ## Useful links
-https://hpo.jax.org/app/ - Human Phenotype Ontology
+https://hpo.jax.org/app/ - Human Phenotype Ontology (HPO)
 
-https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root
+https://bioportal.bioontology.org/ontologies/HP/?p=classes&conceptid=root - BioPortal has many ontologies, including HPO
 
-https://doc2hpo.wglab.org/
+https://doc2hpo.wglab.org/ - To automatically convert clinical description/phenotype to HPO terms.
 
-https://phen2gene.wglab.org/
+https://phen2gene.wglab.org/ - Get a list of genes associated with a set of HPO terms.
 
-https://www.internationalgenome.org/data-portal/sample  # Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files.
+https://www.internationalgenome.org/data-portal/sample - Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files.
 
 
