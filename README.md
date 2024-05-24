@@ -18,19 +18,19 @@ Additional tutorial: https://ubuntu.com/tutorials/command-line-for-beginners#1-o
 
 ## FASTQC
 
-Sample1 (replace x by your group number)
+Sample1 (replace groupx by your group number eg. group1)
 ```
 fastqc -t 1 -o /mnt/sdb/curso_bioinformatica/output/grupox/fastqc /mnt/sdb/curso_bioinformatica/raw_data/sample1/selected_fastq/sample1_chr2-171000000-172000000_R1.fastq.gz /mnt/sdb/curso_bioinformatica/raw_data/sample1/selected_fastq/sample1_chr2-171000000-172000000_R2.fastq.gz
 ```
 
-Sample2 (replace x by your group number)
+Sample2 (replace groupx by your group number eg. group1)
 ```
 fastqc -t 1 -o /mnt/sdb/curso_bioinformatica/output/grupox/fastqc /mnt/sdb/curso_bioinformatica/raw_data/sample2/selected_fastq/sample2_chr6-121000000-122000000_R1.fastq.gz /mnt/sdb/curso_bioinformatica/raw_data/sample2/selected_fastq/sample2_chr6-121000000-122000000_R2.fastq.gz
 ```
 
-Sample3 (replace x by your group number)
+Sample3 (replace groupx by your group number eg. group1)
 ```
-fastqc -t 1 -o /mnt/sdb/curso_bioinformatica/output/grupo1/fastqc /mnt/sdb/curso_bioinformatica/raw_data/sample3/selected_fastq/sample3_chrX-129000000-131000000_R1.fastq.gz /mnt/sdb/curso_bioinformatica/raw_data/sample3/selected_fastq/sample3_chrX-129000000-131000000_R2.fastq.gz
+fastqc -t 1 -o /mnt/sdb/curso_bioinformatica/output/grupox/fastqc /mnt/sdb/curso_bioinformatica/raw_data/sample3/selected_fastq/sample3_chrX-129000000-131000000_R1.fastq.gz /mnt/sdb/curso_bioinformatica/raw_data/sample3/selected_fastq/sample3_chrX-129000000-131000000_R2.fastq.gz
 ```
 
 ##  Alignment
