@@ -153,15 +153,38 @@ gatk BaseRecalibrator -I sample3_chrX-129000000-131000000.sorted_marked.bam -R /
 
 ## ApplyBaseRecalibrator
 
+Sample1
 ```
-gatk ApplyBQSR -I sample_marked.bam -R genome.fasta --bqsr-recal-file sample_marked_baserecalibrator_report.txt -O sample_marked_baserecalibrator.bam
+gatk ApplyBQSR -I sample1_chr2-171000000-172000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta --bqsr-recal-file sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator_report.txt -O sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator.bam
+```
+
+Sample2
+```
+gatk ApplyBQSR -I sample2_chr6-121000000-122000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr6.fasta  --bqsr-recal-file sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator_report.txt -O sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator.bam
+```
+
+Sample3
+```
+gatk ApplyBQSR -I sample3_chrX-129000000-131000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chrX.fasta --bqsr-recal-file sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator_report.txt -O sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator.bam
 ```
 
 ## Qualimap
 
+Sample1
 ```
-qualimap bamqc -bam sample_marked_recalibrated.bam -outdir . -outfile sample_marked_recalibrated_qualimap.pdf -outformat PDF [ -gff targets_position.bed ]
+qualimap bamqc -bam sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator.bam -outdir . -outfile sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator_qualimap.pdf -outformat PDF -gff /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_6columns_for_qualimap.chr2-171000000-172000000.bed
 ```
+
+Sample2
+```
+qualimap bamqc -bam sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator.bam -outdir . -outfile sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator_qualimap.pdf -outformat PDF -gff /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_6columns_for_qualimap.chr6-121000000-122000000.bed
+```
+
+Sample3
+```
+qualimap bamqc -bam sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator.bam -outdir . -outfile sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator_qualimap.pdf -outformat PDF -gff /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_6columns_for_qualimap.chrX-129000000-131000000.bed
+```
+
 
 ## Variant calling
 
