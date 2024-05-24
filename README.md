@@ -115,25 +115,41 @@ samtools index sample3_chrX-129000000-131000000.sorted.bam
 Sample1
 ```
 gatk MarkDuplicates -I sample1_chr2-171000000-172000000.sorted.bam -O sample1_chr2-171000000-172000000.sorted_marked.bam -M sample1_chr2-171000000-172000000.sorted_marked_metrics.txt
+samtools index sample1_chr2-171000000-172000000.sorted_marked.bam
 ```
 
 Sample2
 ```
 gatk MarkDuplicates -I sample2_chr6-121000000-122000000.sorted.bam -O sample2_chr6-121000000-122000000.sorted_marked.bam -M sample2_chr6-121000000-122000000.sorted_marked_metrics.txt
+samtools index sample2_chr6-121000000-122000000.sorted_marked.bam
 ```
 
 Sample3
 ```
 gatk MarkDuplicates -I sample3_chrX-129000000-131000000.sorted.bam -O sample3_chrX-129000000-131000000.sorted_marked.bam -M sample3_chrX-129000000-131000000.sorted_marked_metrics.txt
+samtools index sample3_chrX-129000000-131000000.sorted_marked.bam
 ```
 
 
 
 ## BaseRecalibrator
 
+Sample1
 ```
-gatk BaseRecalibrator -I sample_marked.bam -R genome.fasta --known-sites known_snps.vcf --known-sites known_indels.vcf [ --intervals target_positions.bed --interval-padding 100 ] -O sample_marked_baserecalibrator_report.txt
+gatk BaseRecalibrator -I sample1_chr2-171000000-172000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_snps.hg38.vcf.gz --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_indels.hg38.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed --interval-padding 100 -O sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator_report.txt
 ```
+
+Sample2
+```
+gatk BaseRecalibrator -I sample2_chr6-121000000-122000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr6.fasta --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_snps.hg38.vcf.gz --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_indels.hg38.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr6-121000000-122000000.bed  --interval-padding 100 -O sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator_report.txt
+```
+
+Sample3
+```
+gatk BaseRecalibrator -I sample3_chrX-129000000-131000000.sorted_marked.bam -R /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chrX.fasta --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_snps.hg38.vcf.gz --known-sites /mnt/sdb/curso_bioinformatica/raw_data/known_variants/known_indels.hg38.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_6columns_for_qualimap.chrX-129000000-131000000.bed  --interval-padding 100 -O sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator_report.txt
+```
+
+
 
 ## ApplyBaseRecalibrator
 
