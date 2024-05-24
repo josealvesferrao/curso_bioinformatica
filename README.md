@@ -52,27 +52,82 @@ bwa mem -t 1 -R '@RG\tID:sample3\tPU:M01600.1.sample3\tSM:sample3\tPL:ILLUMINA\t
 
 ## Sort SAM
 
+Go to your output directory (replace x by your group number)
 ```
-samtools sort –o sample_sorted.sam sample.sam
+cd /mnt/sdb/curso_bioinformatica/output/grupox
 ```
+
+Sample1
+```
+samtools sort sample1_chr2-171000000-172000000.sam -o sample1_chr2-171000000-172000000.sorted.sam
+```
+
+Sample2
+```
+samtools sort sample2_chr6-121000000-122000000.sam -o sample2_chr6-121000000-122000000.sorted.sam
+```
+
+Sample3
+```
+samtools sort sample3_chrX-129000000-131000000.sam -o sample3_chrX-129000000-131000000.sorted.sam
+```
+
 
 ## SAM to BAM
 
+Sample1
 ```
-samtools view –b sample_sorted.sam > sample_sorted.bam
+samtools view -b sample1_chr2-171000000-172000000.sorted.sam -o sample1_chr2-171000000-172000000.sorted.bam
 ```
+
+Sample2
+```
+samtools view -b sample2_chr6-121000000-122000000.sorted.sam -o sample2_chr6-121000000-122000000.sorted.bam
+```
+
+Sample3
+```
+samtools view -b sample3_chrX-129000000-131000000.sorted.sam -o sample3_chrX-129000000-131000000.sorted.bam
+```
+
 
 ## Index BAM
 
+Sample1
 ```
-samtools index sample_sorted.bam
+samtools index sample1_chr2-171000000-172000000.sorted.bam
 ```
+
+Sample2
+```
+samtools index sample2_chr6-121000000-122000000.sorted.bam
+```
+
+Sample3
+```
+samtools index sample3_chrX-129000000-131000000.sorted.bam
+```
+
+
 
 ## MarkDuplicates
 
+Sample1
 ```
-gatk MarkDuplicates -I sample.bam -O sample_marked.bam -M sample_marked_metrics.txt
+gatk MarkDuplicates -I sample1_chr2-171000000-172000000.sorted.bam -O sample1_chr2-171000000-172000000.sorted_marked.bam -M sample1_chr2-171000000-172000000.sorted_marked_metrics.txt
 ```
+
+Sample2
+```
+gatk MarkDuplicates -I sample2_chr6-121000000-122000000.sorted.bam -O sample2_chr6-121000000-122000000.sorted_marked.bam -M sample2_chr6-121000000-122000000.sorted_marked_metrics.txt
+```
+
+Sample3
+```
+gatk MarkDuplicates -I sample3_chrX-129000000-131000000.sorted.bam -O sample3_chrX-129000000-131000000.sorted_marked.bam -M sample3_chrX-129000000-131000000.sorted_marked_metrics.txt
+```
+
+
 
 ## BaseRecalibrator
 
