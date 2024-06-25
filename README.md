@@ -205,8 +205,19 @@ gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_re
 
 ## Variant filtering
 
+Sample1
 ```
-gatk VariantFiltration --variant /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_first.vcf.gz --output /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
+gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
+```
+
+Sample2
+```
+gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
+```
+
+Sample3
+```
+gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
 ```
 
 ## Variant selection
