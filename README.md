@@ -189,7 +189,7 @@ qualimap bamqc -bam sample3_chrX-129000000-131000000.sorted_marked_baserecalibra
 ## Variant calling
 
 ```
-gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta --input /home/grupo1/resultados_selected/recalibrate/sample1_chr2-171000000-172000000.sorted.marked.base_recalibration.bam --output /home/grupo1/resultados_selected/sample1_chr2-171000000-172000000_first.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed --interval-padding 100
+gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta --input /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator.bam --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_first.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed --interval-padding 100
 ```
 
 ## Variant filtering
