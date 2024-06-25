@@ -193,6 +193,16 @@ Sample1
 gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr2.fasta --input /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000.sorted_marked_baserecalibrator.bam --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_first.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed --interval-padding 100
 ```
 
+Sample2
+```
+gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chr6.fasta --input /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000.sorted_marked_baserecalibrator.bam --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000_first.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr6-121000000-122000000.bed --interval-padding 100
+```
+
+Sample3
+```
+gatk HaplotypeCaller --reference /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.chrX.fasta --input /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000.sorted_marked_baserecalibrator.bam --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_first.vcf.gz --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chrX-129000000-131000000.bed --interval-padding 100
+```
+
 ## Variant filtering
 
 ```
