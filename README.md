@@ -211,7 +211,7 @@ Replace x by your group number
 
 Sample1
 ```
-gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
+gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --filter-name QUAL80 --filter-expression "QUAL < 80.0" --genotype-filter-name DP20 --genotype-filter-expression "DP < 20"
 ```
 
 Sample2
