@@ -224,6 +224,8 @@ Sample3
 gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_first.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered.vcf.gz --filter-name QUAL30 --filter-expression "QUAL < 30.0" --genotype-filter-name DP10 --genotype-filter-expression "DP < 10"
 ```
 
+Check https://gatk.broadinstitute.org/hc/en-us/articles/360035891011-JEXL-filtering-expressions for more filtering criteria (JEXL expressions)
+
 ## Variant selection
 
 Replace x by your group number
