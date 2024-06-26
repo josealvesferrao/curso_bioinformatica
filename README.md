@@ -222,8 +222,19 @@ gatk VariantFiltration --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sam
 
 ## Variant selection
 
+Sample1
 ```
-gatk SelectVariants --variant /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --output /home/formador/resultados_selected/variant_calling/sample1_chr2-171000000-172000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed
+gatk SelectVariants --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_second_filtered.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_chr2-171000000-172000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr2-171000000-172000000.bed
+```
+
+Sample2
+```
+gatk SelectVariants --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000_second_filtered.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample2_chr6-121000000-122000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chr6-121000000-122000000.bed
+```
+
+Sample3
+```
+gatk SelectVariants --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chrX-129000000-131000000.bed
 ```
 
 ## Link VEP Ensembl Web interface https://www.ensembl.org/Tools/VEP
