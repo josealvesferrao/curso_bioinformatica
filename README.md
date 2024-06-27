@@ -263,6 +263,11 @@ https://manpages.ubuntu.com/manpages/focal/man1/vcf-stats.1.html
 
 https://pwwang.github.io/vcfstats/
 
+Compute ratio heterozygous/homozygous SNVs:
+
+```
+echo $(bcftools view -i 'GT="0/1"' -H /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz | wc -l) / $(bcftools view -i 'GT="1/1"' -H /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz | wc -l) | bc -l
+```
 
 ## Link VEP Ensembl Web interface https://www.ensembl.org/Tools/VEP
 
