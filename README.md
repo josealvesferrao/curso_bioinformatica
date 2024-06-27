@@ -336,7 +336,7 @@ https://www.orpha.net/en/disease
 
 https://gnomad.broadinstitute.org/
 
-https://www.hgmd.cf.ac.uk/ac/introduction.php?lang=portugese
+https://www.hgmd.cf.ac.uk/ac/introduction.php?lang=portugese , https://www.hgmd.cf.ac.uk/docs/register.html
 
 https://pubmed.ncbi.nlm.nih.gov/
 
