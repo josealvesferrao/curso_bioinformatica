@@ -334,4 +334,10 @@ https://www.omim.org/
 
 https://www.orpha.net/en/disease
 
+https://gnomad.broadinstitute.org/
 
+https://www.hgmd.cf.ac.uk/ac/introduction.php?lang=portugese
+
+https://pubmed.ncbi.nlm.nih.gov/
+
+https://www.deciphergenomics.org/browser
