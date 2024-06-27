@@ -268,22 +268,28 @@ https://pwwang.github.io/vcfstats/
 
 ## VEP annotation - VCF output (conda activate curso_amb_vep)
 
+Replace x by your group number
+
 ```
-vep -i /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz --cache --dir_cache /mnt/sdb/curso_bioinformatica/vep --dir_plugins /mnt/sdb/curso_bioinformatica/vep/Plugins --species homo_sapiens --assembly GRCh38 --format vcf --vcf --output_file /mnt/sdb/curso_bioinformatica/output/formador/sample1_single_call_standard_filtered_selected_targets.final_annotated.vcf.gz --force_overwrite --stats_file /mnt/sdb/curso_bioinformatica/output/formador/sample1_single_call_standard_filtered_selected_targets.final_annotated.html --fork 2 --fasta /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.fa --everything --merged --nearest symbol --allele_number --show_ref_allele --hgvsg --transcript_version --mane_select --check_existing --exclude_null_alleles --clin_sig_allele 1 --exclude_predicted --pick_allele_gene
+vep -i /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz --cache --dir_cache /mnt/sdb/curso_bioinformatica/vep --dir_plugins /mnt/sdb/curso_bioinformatica/vep/Plugins --species homo_sapiens --assembly GRCh38 --format vcf --vcf --output_file /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_single_call_standard_filtered_selected_targets.final_annotated.vcf.gz --force_overwrite --stats_file /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_single_call_standard_filtered_selected_targets.final_annotated.html --fork 2 --fasta /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.fa --everything --merged --nearest symbol --allele_number --show_ref_allele --hgvsg --transcript_version --mane_select --check_existing --exclude_null_alleles --clin_sig_allele 1 --exclude_predicted --pick_allele_gene
 ```
 
 ## VEP annotation - TAB output (conda activate curso_amb_vep)
 
+Replace x by your group number
+
 ```
-vep -i /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz --cache --dir_cache /mnt/sdb/curso_bioinformatica/vep --dir_plugins /mnt/sdb/curso_bioinformatica/vep/Plugins --species homo_sapiens --assembly GRCh38 --format vcf --tab --output_file /mnt/sdb/curso_bioinformatica/output/formador/sample1_single_call_standard_filtered_selected_targets.final_annotated.tab --force_overwrite --stats_file /mnt/sdb/curso_bioinformatica/output/formador/sample1_single_call_standard_filtered_selected_targets.final_annotated_new.html --fork 2 --fasta /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.fa --everything --merged --nearest symbol --allele_number --show_ref_allele --hgvsg --transcript_version --mane_select --check_existing --exclude_null_alleles --clin_sig_allele 1 --exclude_predicted --pick_allele_gene
+vep -i /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz --cache --dir_cache /mnt/sdb/curso_bioinformatica/vep --dir_plugins /mnt/sdb/curso_bioinformatica/vep/Plugins --species homo_sapiens --assembly GRCh38 --format vcf --tab --output_file /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_single_call_standard_filtered_selected_targets.final_annotated.tab --force_overwrite --stats_file /mnt/sdb/curso_bioinformatica/output/grupoX/sample1_single_call_standard_filtered_selected_targets.final_annotated_new.html --fork 2 --fasta /mnt/sdb/curso_bioinformatica/raw_data/fasta_ref_genome/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.par_y_n_masked.fa --everything --merged --nearest symbol --allele_number --show_ref_allele --hgvsg --transcript_version --mane_select --check_existing --exclude_null_alleles --clin_sig_allele 1 --exclude_predicted --pick_allele_gene
 ```
 
 ## Link Exomiser Web interface https://exomiser.monarchinitiative.org/exomiser/
 
 ## Exomiser (conda activate base)
 
+Replace x by your group number
+
 ```
-java -Xmx4g -jar /mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/exomiser-cli-13.1.0.jar --assembly hg38 --analysis /mnt/sdb/curso_bioinformatica/raw_data/sample1/exomiser_files/sample1_full_clinical_exome_analysis_file.yml --output-prefix /mnt/sdb/curso_bioinformatica/output/formador/exomiser_output/sample1_Exomiser --spring.config.location=/mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/application.properties
+java -Xmx4g -jar /mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/exomiser-cli-13.1.0.jar --assembly hg38 --analysis /mnt/sdb/curso_bioinformatica/raw_data/sample1/exomiser_files/sample1_full_clinical_exome_analysis_file.yml --output-prefix /mnt/sdb/curso_bioinformatica/output/grupoX/exomiser_output/sample1_Exomiser --spring.config.location=/mnt/sdb/curso_bioinformatica/exomiser/exomiser-cli-13.1.0/application.properties
 ```
 
 ## [Optional] Virtual gene panel / Filter by HPO 150 most associated genes and AF cutoff. Last argument is AF (eg. 0.01 is 1%), try other AF values.
