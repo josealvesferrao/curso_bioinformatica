@@ -245,6 +245,25 @@ Sample3
 gatk SelectVariants --variant /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered.vcf.gz --output /mnt/sdb/curso_bioinformatica/output/grupoX/sample3_chrX-129000000-131000000_second_filtered_selected.vcf.gz --exclude-filtered true --intervals /mnt/sdb/curso_bioinformatica/raw_data/targets_TSO/trusight_one_targets_4columns.chrX-129000000-131000000.bed
 ```
 
+## Variant calling - Evaluating (examples)
+
+https://vcftools.github.io/man_latest.html (You may try on our server to run:)
+
+```
+vcftools --TsTv-summary --gzvcf /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz
+```
+
+https://samtools.github.io/bcftools/bcftools.html (You may try on our server to run:)
+
+```
+bcftools stats /mnt/sdb/curso_bioinformatica/raw_data/sample1/full_vcf/sample1_single_call_standard_filtered_selected_targets.final.vcf.gz
+```
+
+https://manpages.ubuntu.com/manpages/focal/man1/vcf-stats.1.html
+
+https://pwwang.github.io/vcfstats/
+
+
 ## Link VEP Ensembl Web interface https://www.ensembl.org/Tools/VEP
 
 ## VEP annotation - VCF output (conda activate curso_amb_vep)
