@@ -324,3 +324,9 @@ https://www.uniprot.org/
 https://gtexportal.org/home/, https://www.bgee.org/ - You may check gene expression levels (in different species or tissues)
 
 https://genome-euro.ucsc.edu/cgi-bin/hgGateway?redirect=manual&source=genome.ucsc.edu - You may search for a gene or specific coordinate, and select a set of tracks to see a lot of information regarding that genomic region
+
+https://www.omim.org/
+
+https://www.orpha.net/en/disease
+
+
