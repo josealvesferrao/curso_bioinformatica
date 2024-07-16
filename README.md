@@ -312,7 +312,9 @@ https://doc2hpo.wglab.org/ - To automatically convert clinical description/pheno
 
 https://phen2gene.wglab.org/ - Get a list of genes associated with a set of HPO terms
 
-https://www.internationalgenome.org/data-portal/sample - Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files
+https://www.internationalgenome.org/data-portal/sample - Here you may find and download fastq files of exome sequencing. Choose one sample and select "sequence" and "exome". They also have alignment (SAM/BAM/CRAM) and variant (VCF) files.
+
+To download a BAM file of the 1000 genomes project, click this link: https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/data/NA12878/exome_alignment/NA12878.chrom20.ILLUMINA.bwa.CEU.exome.20121211.bam
 
 https://www.ensembl.org/index.html - You may look for information regarding a certain gene in Ensembl. Choose Human and search for a gene, press "Go"
 
